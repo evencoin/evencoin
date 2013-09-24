@@ -9,10 +9,10 @@
 // Name of client reported in the 'version' message. Report the same name
 // for both bitcoind and bitcoin-qt, to make it harder for attackers to
 // target servers or GUI users specifically.
-const std::string CLIENT_NAME("Satoshi");
+const std::string CLIENT_NAME("Divisible By Two");
 
 // Client version number
-#define CLIENT_VERSION_SUFFIX   "-foo"
+#define CLIENT_VERSION_SUFFIX   "-even"
 
 
 // The following part of the code determines the CLIENT_BUILD variable.
@@ -46,7 +46,7 @@ const std::string CLIENT_NAME("Satoshi");
     "v" STRINGIFY(maj) "." STRINGIFY(min) "." STRINGIFY(rev) "." STRINGIFY(build) "-g" commit
 
 #define BUILD_DESC_FROM_UNKNOWN(maj,min,rev,build) \
-    "v" STRINGIFY(maj) "." STRINGIFY(min) "." STRINGIFY(rev) "." STRINGIFY(build) "-unk"
+    "v" STRINGIFY(maj) "." STRINGIFY(min) "." STRINGIFY(rev) "." STRINGIFY(build) "-divisible_by_two"
 
 #ifndef BUILD_DESC
 #    ifdef GIT_COMMIT_ID
